@@ -7,7 +7,7 @@ class About extends Component {
     <div className="row">
       <div className="col-lg-5 col-md-6">
         <div className="about-img" data-aos="fade-right" data-aos-delay={100}>
-          <img src="assets/img/about-img.jpg" alt="about" />
+          <img src="assets/img/about-img.svg" alt="about" />
         </div>
       </div>
       <div className="col-lg-7 col-md-6">
