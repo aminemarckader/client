@@ -5,7 +5,6 @@ import About from './components/about';
 import Services from './components/services';
 import Footer from './components/footer';
 import Backtop from './components/backtop';
-import Topbar from "./components/topbar/topbar";
 function App() {
   return (
     <div className="App">

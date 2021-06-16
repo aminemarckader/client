@@ -13,9 +13,9 @@ class About extends Component {
       <div className="col-lg-7 col-md-6">
         <div className="about-content" data-aos="fade-left" data-aos-delay={100}>
           <h2>About Us</h2>
-          <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p>
+          <h3><strong>“Safeguarding lives”</strong> is our just cause</h3>
+          <p>We tend to build a community of HSE professionals putting together their knowledge and expertise to build and improve risk assessments across all industries.</p>
+          <p>to help those who are learners, beginners, professionals, for the sole purpose of ‘safeguarding lives’ , embrace the cause and join</p>
           <ul>
             <li><i className="bi bi-check-circle" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             <li><i className="bi bi-check-circle" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
