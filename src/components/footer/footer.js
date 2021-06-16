@@ -10,7 +10,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-sm-6">
               <div className="footer-info">
-                <h3>Rapid</h3>
+                <h3>First HSE</h3>
                 <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
               </div>
               <div className="footer-newsletter">
@@ -28,7 +28,7 @@ class Footer extends Component {
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#about">About us</a></li>
-                  <li><a href="#">Services</a></li>
+                  <li><a href="#services">Services</a></li>
                   <li><a href="#">Terms of service</a></li>
                   <li><a href="#">Privacy policy</a></li>
                 </ul>
@@ -55,7 +55,7 @@ class Footer extends Component {
         <div className="col-lg-6">
           <div className="form">
             <h4>Send us a message</h4>
-            <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+            <p>Your feedback is important to our teams for improving our products and services.</p>
             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
               <div className="form-group">
                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
