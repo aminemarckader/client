@@ -5,10 +5,19 @@ import About from './components/about';
 import Services from './components/services';
 import Footer from './components/footer';
 import Backtop from './components/backtop';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-     <Header />
+      <Router>
+      <Header />
      <Hero />
      <main id="main">
         <About />
@@ -16,6 +25,7 @@ function App() {
      </main>
      <Footer />
      <Backtop />
+      </Router>
     </div>
   );
 }

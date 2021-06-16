@@ -151,9 +151,9 @@ class Header extends Component {
   render() {
     return  <header id="header" className="fixed-top d-flex align-items-center header-transparent">
   <div className="container d-flex align-items-center">
-    <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1>
+    {/* <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1> */}
     {/* Uncomment below if you prefer to use an image logo */}
-    {/* <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
+    <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a>
     
     <Navbar />
     <div className="social-links">
