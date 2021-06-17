@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { FcCollaboration,FcParallelTasks,FcConferenceCall } from "react-icons/fc";
-import { FaHardHat } from "react-icons/fa";
 
 class Services extends Component {
   render() {
