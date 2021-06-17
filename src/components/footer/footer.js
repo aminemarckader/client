@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './footer.css';
 class Footer extends Component {
   render() {
     return  <footer id="footer" className="section-bg">
@@ -36,11 +36,13 @@ class Footer extends Component {
               <div className="footer-links">
                 <h4>Contact Us</h4>
                 <p>
-                  A108 Adam Street <br />
+                <strong><i className="bi bi-compass footer-icon" /></strong>A108 Adam Street <br />
                   New York, NY 535022<br />
                   United States <br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  <strong><i className="bi bi-telephone footer-icon" /></strong> +1 5589 55488 55<br />
+                  <strong><i className="bi bi-info-circle footer-icon" /></strong> contact@firsthse.com<br />
+                  <strong><i className="bi bi-tools footer-icon" /></strong> support@firsthse.com<br />
+
                 </p>
               </div>
               <div className="social-links">
