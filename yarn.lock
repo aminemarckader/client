@@ -2447,7 +2447,7 @@
   "resolved" "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
 
-"cssnano@^3.10.0", "cssnano@>=2.6.1 <4":
+"cssnano@>=2.6.1 <4":
   "integrity" "sha1-Tzj2zqK5sX+gFJDyPx3GjqZcHDg="
   "resolved" "https://registry.npmjs.org/cssnano/-/cssnano-3.10.0.tgz"
   "version" "3.10.0"
