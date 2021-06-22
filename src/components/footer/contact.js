@@ -10,8 +10,6 @@ function Contact() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      role="form"
-     
     >
       <div className="form-group has-validation">
         <input
@@ -27,7 +25,7 @@ function Contact() {
       <div className="form-group mt-3">
         <input
           type="email"
-          className="form-control"
+          className={`form-control ${errors.email ? 'is-invalid' : ''}`}
           name="email"
           id="email"
           placeholder="Your Email*"
@@ -38,21 +36,23 @@ function Contact() {
       <div className="form-group mt-3">
         <input
           type="text"
-          className="form-control"
+          className={`form-control ${errors.subject ? 'is-invalid' : ''}`}
           name="subject"
           id="subject"
           placeholder="Subject*"
           {...register("subject",{ required: true })}
         />
+        	<span>{errors.subject && "the subject is required"}</span>
       </div>
       <div className="form-group mt-3">
         <textarea
-          className="form-control"
+          className={`form-control ${errors.message ? 'is-invalid' : ''}`}
           name="message"
           rows={5}
           placeholder="Message*"
           {...register("message",{ required: true })}
         />
+        	<span>{errors.message && "your message is required"}</span>
       </div>
       <div className="my-3">
         <div className="loading">Loading</div>
