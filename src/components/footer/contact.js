@@ -31,7 +31,7 @@ function Contact() {
           placeholder="Your Email*"
           {...register("email",{ required: true })}
         />
-		<span>{errors.email && "your email is required"}</span>
+		<span className="invalid-feedback">{errors.email && "your email is required"}</span>
       </div>
       <div className="form-group mt-3">
         <input
@@ -42,7 +42,7 @@ function Contact() {
           placeholder="Subject*"
           {...register("subject",{ required: true })}
         />
-        	<span>{errors.subject && "the subject is required"}</span>
+        	<span className="invalid-feedback">{errors.subject && "the subject is required"}</span>
       </div>
       <div className="form-group mt-3">
         <textarea
@@ -52,7 +52,7 @@ function Contact() {
           placeholder="Message*"
           {...register("message",{ required: true })}
         />
-        	<span>{errors.message && "your message is required"}</span>
+        	<span className="invalid-feedback">{errors.message && "your message is required"}</span>
       </div>
       <div className="my-3">
         <div className="loading">Loading</div>
