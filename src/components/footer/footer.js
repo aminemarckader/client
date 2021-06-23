@@ -29,7 +29,7 @@ class Footer extends Component {
               <div className="footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><HashLink className="scrollto" smooth to="#">Home</HashLink></li>
+                  <li><HashLink smooth to="#">Home</HashLink></li>
                   <li><HashLink className="scrollto" smooth to="#about">About</HashLink></li>
                   <li><HashLink className="scrollto" smooth to="#services">Services</HashLink></li>
                   <li><Link to="/terms" >Terms of service</Link></li>
