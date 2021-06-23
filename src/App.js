@@ -7,6 +7,10 @@ import Footer from './components/footer';
 import Backtop from './components/backtop';
 import Privacy from './components/privacy';
 import Terms from './components/terms';
+import LanguageDetector from "i18next-browser-languagedetector"
+import Backend from 'i18next-http-backend';
+import french from './locales/fr.json';
+import english from './locales/en.json';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,44 +20,21 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 i18n
+  .use(Backend)
+  .use(LanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
+    react: { 
+      useSuspense: false //   <---- this will do the magic
+    },
     // the translations
     // (tip move them in a JSON file and import them,
     // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
     resources: {
-      en: {
-        translation: {
-          "Contact Us": "Contact Us",
-          "Send Message": "Send Message",
-          "Thank You": "Your message has been sent. Thank you!",
-          "Name":"Your Name",
-          "Email":"Your Email",
-          "Subject":"Subject",
-          "Message":"Your Message",
-          "Name required":"Your Name is required",
-          "Email required":"Your Email is required",
-          "Subject required":"Subject is required",
-          "Message required":"Your Message is required",
-        }
-      },
-      fr: {
-        translation: {
-          "Contact Us": "Contactez Nous",
-          "Send Message": "Envoyer Message",
-          "Thank You": "Votre message a ete bien envoye. Merci!",
-          "Name":"Votre Nom",
-          "Email":"Votre Email",
-          "Subject":"Votre Sujet",
-          "Message":"Votre Message",
-          "Name required":"Votre Nom est requis",
-          "Email required":"Votre Email est requis",
-          "Subject required":"Votre Suject est requis",
-          "Message required":"Votre Message est requis",
-        }
-      },
+      french,
+      english
     },
-    lng: document.querySelector('html').lang, // if you're using a language detector, do not define the lng option
+     // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
 
     interpolation: {

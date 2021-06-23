@@ -1,0 +1,15 @@
+{
+    "translation": {
+        "Contact Us": "Contactez Nous",
+        "Send Message": "Envoyer Message",
+        "Thank You": "Votre message a ete bien envoye. Merci!",
+        "Name":"Votre Nom",
+        "Email":"Votre Email",
+        "Subject":"Votre Sujet",
+        "Message":"Votre Message",
+        "Name required":"Votre Nom est requis",
+        "Email required":"Votre Email est requis",
+        "Subject required":"Votre Suject est requis",
+        "Message required":"Votre Message est requis"
+      }
+}
