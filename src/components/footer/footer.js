@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Contact from "./contact";
-
+import {Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './footer.css';
 class Footer extends Component {
   render() {
@@ -28,11 +29,11 @@ class Footer extends Component {
               <div className="footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about">About us</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#">Terms of service</a></li>
-                  <li><a href="#">Privacy policy</a></li>
+                  <li><HashLink smooth to="#">Home</HashLink></li>
+                  <li><HashLink smooth to="#about">About</HashLink></li>
+                  <li><HashLink smooth to="#services">Services</HashLink></li>
+                  <li><Link to="/terms" >Terms of service</Link></li>
+                  <li><Link to="/privacy" >Privacy</Link></li>
                 </ul>
               </div>
               <div className="footer-links">

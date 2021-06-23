@@ -16,8 +16,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <div className="App">
-          <Router path="/" exact>
+       
+          <Route path="/" exact >
+          <div className="App">
             <Header />
             <Hero />
             <main id="main">
@@ -26,14 +27,11 @@ function App() {
             </main>
             <Footer />
             <Backtop />
-          </Router>
-          <Route exact path="/terms">
-            <Terms />
+            </div>
           </Route>
-          <Route exact path="/privacy">
-            <Privacy />
-          </Route>
-        </div>
+          <Route exact path="/terms" component={Terms} />
+          <Route exact path="/privacy" component={Privacy} />
+        
       </Switch>
     </Router>
   );
