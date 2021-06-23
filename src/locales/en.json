@@ -1,5 +1,7 @@
 {
     "translation": {
+        "Home":"Home",
+        "About": "About",
         "Contact Us": "Contact Us",
         "Send Message": "Send Message",
         "Thank You": "Your message has been sent. Thank you!",

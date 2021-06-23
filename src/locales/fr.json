@@ -1,5 +1,7 @@
 {
     "translation": {
+        "Home":"Acceuil",
+        "About": "A props",
         "Contact Us": "Contactez Nous",
         "Send Message": "Envoyer Message",
         "Thank You": "Votre message a ete bien envoye. Merci!",
