@@ -19,6 +19,11 @@ import {
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
+const options = {
+  order: ['querystring', 'navigator'],
+  lookupQuerystring: 'lng'
+}
+
 i18n
   .use(LanguageDetector)
   .use(Backend)
@@ -36,6 +41,7 @@ i18n
       en: english
     },
      // if you're using a language detector, do not define the lng option
+     detection: options,
     fallbackLng: "fr",
     supportedLngs: ['de', 'en', 'es', 'fr'],
     interpolation: {
