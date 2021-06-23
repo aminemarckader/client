@@ -16,8 +16,7 @@ function App() {
   return (
     <Router>
       <Switch>
-       
-          <Route path="/" exact >
+          <Route path="/">
           <div className="App">
             <Header />
             <Hero />
