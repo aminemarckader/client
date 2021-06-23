@@ -5,28 +5,37 @@ import About from './components/about';
 import Services from './components/services';
 import Footer from './components/footer';
 import Backtop from './components/backtop';
-
+import Privacy from './components/privacy';
+import Terms from './components/terms';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-      <Header />
-     <Hero />
-     <main id="main">
-        <About />
-        <Services />
-     </main>
-     <Footer />
-     <Backtop />
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <div className="App">
+          <Router path="/" exact>
+            <Header />
+            <Hero />
+            <main id="main">
+              <About />
+              <Services />
+            </main>
+            <Footer />
+            <Backtop />
+          </Router>
+          <Route exact path="/terms">
+            <Terms />
+          </Route>
+          <Route exact path="/privacy">
+            <Privacy />
+          </Route>
+        </div>
+      </Switch>
+    </Router>
   );
 }
 
