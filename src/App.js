@@ -25,7 +25,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     react: { 
-      useSuspense: false //   <---- this will do the magic
+      useSuspense: false
     },
     // the translations
     // (tip move them in a JSON file and import them,
@@ -35,8 +35,8 @@ i18n
       english
     },
      // if you're using a language detector, do not define the lng option
-    fallbackLng: "en",
-
+    fallbackLng: "fr",
+    supportedLngs: ['de', 'en', 'es', 'fr'],
     interpolation: {
       escapeValue: false
     }
