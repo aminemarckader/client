@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import Contact from "./contact";
 import {Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { ToastProvider } from 'react-toast-notifications';
 import './footer.css';
 class Footer extends Component {
+
   render() {
     return  <footer id="footer" className="section-bg">
   <div className="footer-top">
@@ -61,7 +63,9 @@ class Footer extends Component {
           <div className="form">
             <h4>Send us a message</h4>
             <p>Your feedback is important to our teams for improving our products and services.</p>
-            <Contact />
+           <ToastProvider>
+           <Contact />
+           </ToastProvider>
            </div>
         </div>
       </div>

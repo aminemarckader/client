@@ -1,11 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useToasts } from 'react-toast-notifications'
 
 function Contact() {
-  const { register, watch, handleSubmit,formState: { errors } } = useForm();
-
+  const { register, handleSubmit,formState: { errors } } = useForm();
+  const { addToast } = useToasts();
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    //alert(JSON.stringify(data));
+    addToast("Message sent successfully", {
+      appearance: 'success',
+      autoDismiss: true,
+    })
   };
   return (
     <form
