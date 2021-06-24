@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withTranslation } from 'react-i18next';
 
 class About extends Component {
   render() {
@@ -12,10 +13,11 @@ class About extends Component {
       </div>
       <div className="col-lg-7 col-md-6">
         <div className="about-content" data-aos="fade-left" data-aos-delay={100}>
-          <h2>About Us</h2>
-          <h3><strong>“Safeguarding lives”</strong> is our just cause</h3>
-          <p>We tend to build a community of HSE professionals putting together their knowledge and expertise to build and improve risk assessments across all industries.</p>
-          <p>to help those who are learners, beginners, professionals, for the sole purpose of ‘safeguarding lives’ , embrace the cause and join</p>
+          <h2>{this.props.t('About Us')}</h2>
+          <h3><strong>“Safeguarding lives”</strong> {this.props.t('Just Cause')}</h3>
+          <p>{this.props.t('About p1')}</p>
+          <p>{this.props.t('About p2')}</p>
+          
           <ul>
             <li><i className="bi bi-check-circle" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
             <li><i className="bi bi-check-circle" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -30,4 +32,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default withTranslation()(About);

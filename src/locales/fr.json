@@ -2,7 +2,17 @@
     "translation": {
         "Home":"Acceuil",
         "About": "A props",
+        "About Us": "A props de nous",
         "Contact Us": "Contactez Nous",
+
+        "Statment": "Nous pensons que l'évaluation des risques est au cœur de la sécurité.",
+        "Start Here": "Commenceons Ici",
+        "Just Cause":"c'est notre juste cause",
+        "About p1":"We tend to build a community of HSE professionals and practioners putting together their knowledge and expertise to build and improve risk assessments across all industries.",
+        "About p2":"To help Students, Beginners and Professionals alike, for the sole purpose of ‘safeguarding lives’, So embrace the cause and join",
+
+
+        "Useful Links": "Liens Utils",
         "Send Message": "Envoyer Message",
         "Thank You": "Votre message a ete bien envoye. Merci!",
         "Name":"Votre Nom",

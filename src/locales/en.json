@@ -2,7 +2,16 @@
     "translation": {
         "Home":"Home",
         "About": "About",
+        "About Us": "About Us",
         "Contact Us": "Contact Us",
+
+        "Statment": "We believe risk assessment is the core of safety",
+        "Start Here": "Start Here",
+        "Just Cause":"is our just cause",
+        "About p1":"We tend to build a community of HSE professionals and practioners putting together their knowledge and expertise to build and improve risk assessments across all industries.",
+        "About p2":"To help Students, Beginners and Professionals alike, for the sole purpose of ‘safeguarding lives’, So embrace the cause and join",
+
+        "Useful Links": "USEFUL LINKS",
         "Send Message": "Send Message",
         "Thank You": "Your message has been sent. Thank you!",
         "Name":"Your Name",
