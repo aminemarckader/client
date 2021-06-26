@@ -50,7 +50,7 @@ function App() {
     
       <Switch>
           <Route exact path='/' component={Home} />
-          <Route  path={process.env.PUBLIC_URL+'/terms'} component={Terms} />
+          <Route  path='/terms' component={Terms} />
           <Route  path='/privacy' component={Privacy} />
       </Switch>
 
