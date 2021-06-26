@@ -34,7 +34,7 @@ class Footer extends Component {
                   <li><HashLink smooth to="#">Home</HashLink></li>
                   <li><HashLink className="scrollto" smooth to="#about">About</HashLink></li>
                   <li><HashLink className="scrollto" smooth to="#services">Services</HashLink></li>
-                  <li><Link to="/terms" >Terms of service</Link></li>
+                  <li><Link to='/terms' >Terms of service</Link></li>
                   <li><Link to="/privacy" >Privacy</Link></li>
                 </ul>
               </div>

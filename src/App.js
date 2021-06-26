@@ -52,7 +52,7 @@ i18n
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL + '/'}>
       <Switch>
           <Route path="/">
           <div className="App">
@@ -66,7 +66,7 @@ function App() {
             <Backtop />
             </div>
           </Route>
-          <Route exact path="/terms" component={Terms} />
+          <Route exact path='/terms' component={Terms} />
           <Route exact path="/privacy" component={Privacy} />
         
       </Switch>
