@@ -51,10 +51,10 @@ class Footer extends Component {
                 </p>
               </div>
               <div className="social-links">
-                <a href="#" className="twitter"><i className="bi bi-twitter" /></a>
-                <a href="#" className="facebook"><i className="bi bi-facebook" /></a>
-                <a href="#" className="instagram"><i className="bi bi-instagram" /></a>
-                <a href="#" className="linkedin"><i className="bi bi-linkedin" /></a>
+                <Link to="/" className="twitter"><i className="bi bi-twitter" /></Link>
+                <Link to="/" className="facebook"><i className="bi bi-facebook" /></Link>
+                <Link to="/" className="linkedin"><i className="bi bi-linkedin" /></Link>
+                <Link to="/" className="instagram"><i className="bi bi-instagram" /></Link>
               </div>
             </div>
           </div>
