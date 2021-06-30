@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import ScrollTop from "./components/home/ScrollTop";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route } from "react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Route component={App}/>
+   <ScrollTop>
+   <Route component={App}/>
+   </ScrollTop>
   </BrowserRouter>,
   document.getElementById('root')
 );

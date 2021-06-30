@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link,withRouter } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 
 class Breadcrumb extends Component {
   render() {
@@ -6,7 +8,7 @@ class Breadcrumb extends Component {
     <div className="container">
 
       <ol>
-        <li><a href="index.html">Home</a></li>
+        <li><Link to="/">{this.props.t('Home')}</Link></li>
         <li>{this.props.title}</li>
       </ol>
       <h2>{this.props.title}</h2>
@@ -16,4 +18,4 @@ class Breadcrumb extends Component {
   }
 }
 
-export default Breadcrumb;
+export default withRouter(withTranslation()(Breadcrumb));
