@@ -1,7 +1,10 @@
 import React from "react";
+import Header from './components/header';
 import Home from './components/home';
 import Privacy from './components/privacy';
 import Terms from './components/terms';
+import Footer from './components/footer';
+import Backtop from './components/backtop';
 import LanguageDetector from "i18next-browser-languagedetector"
 import Backend from 'i18next-http-backend';
 import french from './locales/fr.json';
@@ -47,12 +50,16 @@ i18n
 function App() {
   
   return (
-    
+    <div className="App">
+      <Header />
       <Switch>
           <Route exact path='/' component={Home} />
           <Route  path='/terms' component={Terms} />
           <Route  path='/privacy' component={Privacy} />
       </Switch>
+      <Footer />
+    <Backtop />
+    </div>
 
   );
 }

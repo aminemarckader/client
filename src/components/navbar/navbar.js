@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { HashLink } from 'react-router-hash-link';
 import { withTranslation } from 'react-i18next';
+
+ 
 class Navbar extends Component {
   render() {
+    
     return <nav id="navbar" className="navbar order-last order-lg-0">
     <ul>
       <li><HashLink className="nav-link scrollto active" to="#hero">{this.props.t('Home')}</HashLink></li>
-      <li><HashLink className="nav-link scrollto" to="#about">{this.props.t('About')}</HashLink></li>
-      <li><HashLink className="nav-link scrollto" to="#services">{this.props.t('Services')}</HashLink></li>
+      <li><HashLink className="nav-link scrollto" to="/#about">{this.props.t('About')}</HashLink></li>
+      <li><HashLink className="nav-link scrollto" to="/#services">{this.props.t('Services')}</HashLink></li>
       {/* <li><a className="nav-link scrollto " href="#portfolio">Portfolio</a></li>
       <li><a className="nav-link scrollto" href="#team">Team</a></li> */}
       {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down" /></a>

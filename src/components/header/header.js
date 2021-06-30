@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from '../navbar/navbar';
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
+
 class Header extends Component {
 
   componentDidMount(){
@@ -150,7 +151,7 @@ class Header extends Component {
 
 
   render() {
-    return  <header id="header" className="fixed-top d-flex align-items-center header-transparent">
+    return  <header id="header" className="fixed-top d-flex align-items-center">
   <div className="container d-flex align-items-center">
     {/* <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1> */}
     {/* Uncomment below if you prefer to use an image logo */}
@@ -169,4 +170,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
