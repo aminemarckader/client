@@ -8,7 +8,7 @@ class Navbar extends Component {
     
     return <nav id="navbar" className="navbar order-last order-lg-0">
     <ul>
-      <li><HashLink className="nav-link scrollto active" to="#hero">{this.props.t('Home')}</HashLink></li>
+      <li><HashLink className="nav-link scrollto active" to="/#hero">{this.props.t('Home')}</HashLink></li>
       <li><HashLink className="nav-link scrollto" to="/#about">{this.props.t('About')}</HashLink></li>
       <li><HashLink className="nav-link scrollto" to="/#services">{this.props.t('Services')}</HashLink></li>
       {/* <li><a className="nav-link scrollto " href="#portfolio">Portfolio</a></li>
@@ -30,7 +30,7 @@ class Navbar extends Component {
           <li><a href="#">Drop Down 4</a></li>
         </ul>
       </li> */}
-      <li><HashLink className="nav-link scrollto" to="#footer">{this.props.t('Contact Us')}</HashLink></li>
+      <li><HashLink className="nav-link scrollto" to="/#contact">{this.props.t('Contact Us')}</HashLink></li>
     </ul>
     <i className="bi bi-list mobile-nav-toggle" />
   </nav>

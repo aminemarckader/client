@@ -7,7 +7,7 @@ import './footer.css';
 class Footer extends Component {
 
   render() {
-    return  <footer id="footer" className="section-bg">
+    return  <footer id="contact" className="section-bg">
   <div className="footer-top">
     <div className="container">
       <div className="row">
@@ -32,8 +32,8 @@ class Footer extends Component {
                 <h4>Useful Links</h4>
                 <ul>
                   <li><HashLink smooth to="#">Home</HashLink></li>
-                  <li><HashLink className="scrollto" smooth to="#about">About</HashLink></li>
-                  <li><HashLink className="scrollto" smooth to="#services">Services</HashLink></li>
+                  <li><HashLink className="scrollto" smooth to="/#about">About</HashLink></li>
+                  <li><HashLink className="scrollto" smooth to="/#services">Services</HashLink></li>
                   <li><Link to='/terms' >Terms of service</Link></li>
                   <li><Link to="/privacy" >Privacy</Link></li>
                 </ul>
