@@ -30,7 +30,7 @@ class Navbar extends Component {
           <li><a href="#">Drop Down 4</a></li>
         </ul>
       </li> */}
-      <li><HashLink className="nav-link scrollto" to="/#contact">{this.props.t('Contact Us')}</HashLink></li>
+      <li><HashLink className="nav-link scrollto" to="/#footer">{this.props.t('Contact Us')}</HashLink></li>
     </ul>
     <i className="bi bi-list mobile-nav-toggle" />
   </nav>

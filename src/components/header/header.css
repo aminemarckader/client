@@ -9,5 +9,6 @@
     }
     .bg-logo-small{
        visibility:visible; 
+       width: 165px !important;
     }
  }
