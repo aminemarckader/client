@@ -1,13 +1,17 @@
 .bg-logo-small{
-    visibility:hidden;
+   display: none;
  }
  
+ .bg-logo{
+   max-height: 56px !important;
+ }
  @media only screen and (max-width: 500px){ 
  
     .bg-logo {
        display:none !important;
     }
     .bg-logo-small{
+       display: inline;
        visibility:visible; 
        width: 165px !important;
     }

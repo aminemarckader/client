@@ -175,7 +175,7 @@ class Header extends Component {
     {/* <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1> */}
     {/* Uncomment below if you prefer to use an image logo */}
     <Link to="/" className="logo me-auto">
-      <img src="assets/img/word-logo.png" height="100" width="200" alt="" className="img-fluid bg-logo"/>
+      <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo"/>
       <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo-small"/>
     </Link>
     
