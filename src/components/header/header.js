@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from '../navbar/navbar';
 import { Link,withRouter } from 'react-router-dom';
-
+import './header.css';
 class Header extends Component {
 
   componentDidMount(){
@@ -155,7 +155,10 @@ class Header extends Component {
   <div className="container d-flex align-items-center">
     {/* <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1> */}
     {/* Uncomment below if you prefer to use an image logo */}
-    <Link to="/" className="logo me-auto"><img src="assets/img/logo-word.png" alt="" className="img-fluid"/></Link>
+    <Link to="/" className="logo me-auto">
+      <img src="assets/img/logo-word.png" alt="" className="img-fluid bg-logo"/>
+      <img src="assets/img/logo.png" alt="" className="img-fluid bg-logo-small"/>
+    </Link>
     
     <Navbar />
     <div className="social-links">

@@ -1,0 +1,13 @@
+.bg-logo-small{
+    visibility:hidden;
+ }
+ 
+ @media only screen and (max-width: 500px){ 
+ 
+    .bg-logo {
+       display:none !important;
+    }
+    .bg-logo-small{
+       visibility:visible; 
+    }
+ }
