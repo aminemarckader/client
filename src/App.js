@@ -5,6 +5,14 @@ import Privacy from './components/privacy';
 import Terms from './components/terms';
 import Footer from './components/footer';
 import Backtop from './components/backtop';
+
+//login and register
+import Login from './components/login';
+import Register from './components/register';
+import Dashboard from './components/dashboard';
+import ProtectedRoute from './components/ProtectedRoute';
+
+//language component
 import LanguageDetector from "i18next-browser-languagedetector"
 import Backend from 'i18next-http-backend';
 import french from './locales/fr.json';
@@ -57,6 +65,9 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route  path='/terms' component={Terms} />
           <Route  path='/privacy' component={Privacy} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <ProtectedRoute path="/dashboard" component={Dashboard} />
       </Switch>
       <Footer />
     <Backtop />
