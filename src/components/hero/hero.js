@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 class Hero extends Component {
   render() {
@@ -9,7 +10,7 @@ class Hero extends Component {
       <div className="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in" data-aos-delay={100}>
         <h2>{this.props.t('Statment')}</h2>
         <div>
-          <a href="#about" className="btn-get-started scrollto">{this.props.t('Start Here')}</a>
+          <Link to="/login" className="btn-get-started scrollto">{this.props.t('Start Here')}</Link>
         </div>
       </div>
       <div className="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay={200}>
