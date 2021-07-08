@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import './login.css';
 class Login extends Component {
   render() {
@@ -27,14 +28,14 @@ class Login extends Component {
 						<input type="checkbox"/> 
 						<span class="checkmark"></span> </label> </div>
                 <div class="mt-sm-0 mt-3">
-					<a href="#">Forgot password?</a>
+					<Link to="/forgot-password">Forgot password?</Link>
 				</div>
             </div>
             <div class="my-3"> 
 				<input type="submit" value="Login" class="btn btn-primary"/> 
 			</div>
             <div class="mb-3"> <span class="text-light-white">Don't have an account?</span>
-				<a href="#">Sign Up</a>
+				<Link to="/register">Sign Up</Link>
 			</div>
         </form>
         <div class="position-relative border-bottom my-3 line"> 

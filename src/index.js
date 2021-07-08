@@ -11,6 +11,7 @@ import Register from './components/register';
 import Dashboard from './components/dashboard/dashboard';
 
 import ProtectedRoute from './components/ProtectedRoute';
+import ForgotPassword from './components/forgotpassword/forgotpassword';
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
    <ScrollTop>
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Route exact path="/" component={App}/>
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />
+      <Route exact path="/forgot-password" component={ForgotPassword} />
       <ProtectedRoute path="/dashboard" component={Dashboard} />
     </Switch>
    </ScrollTop>
