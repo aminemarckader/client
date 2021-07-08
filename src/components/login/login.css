@@ -24,7 +24,7 @@ body {
 .wrapper .card {
     max-width: 400px;
     min-height: 450px;
-    margin: 30px;
+    margin: auto !important;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     backdrop-filter: blur(10px);
@@ -196,3 +196,25 @@ body {
         margin: 10px
     }
 }
+
+.wrapper .bg-logo-small{
+    display: none;
+  }
+  
+  .wrapper .bg-logo{
+    max-height: 56px !important;
+    display: block;
+    margin: auto!important;
+  }
+  @media only screen and (max-width: 500px){ 
+  
+    .wrapper .bg-logo {
+        display:none !important;
+     }
+     .wrapper .bg-logo-small{
+        display: block;
+        margin: auto!important;
+        width: 165px !important;
+        margin: 30px;
+     }
+  }

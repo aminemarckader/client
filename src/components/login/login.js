@@ -3,7 +3,10 @@ import './login.css';
 class Login extends Component {
   render() {
     return <div class="wrapper">
-    <div class="card">
+    <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo mb-3"/>
+        <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo-small"/>
+    <div class="card mt-3">
+        
         <form action="#" class="d-flex flex-column">
             <div class="h3 text-center text-white">Login</div>
             <div class="d-flex align-items-center input-field my-3 mb-4"> 
@@ -21,7 +24,7 @@ class Login extends Component {
                 <div class="d-flex align-items-center"> 
 					<label class="option"> 
 						<span class="text-light-white">Remember Me</span> 
-						<input type="checkbox" checked/> 
+						<input type="checkbox"/> 
 						<span class="checkmark"></span> </label> </div>
                 <div class="mt-sm-0 mt-3">
 					<a href="#">Forgot password?</a>
@@ -44,9 +47,6 @@ class Login extends Component {
 		 <a href="https://www.google.com" target="_blank" class="px-2">
 			<img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""/> 
 		</a>
-			<a href="https://www.github.com" target="_blank" class="px-2"> 
-				<img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt="" />
-			</a> 
 		</div>
     </div>
 </div>;
