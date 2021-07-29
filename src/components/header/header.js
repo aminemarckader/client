@@ -10,12 +10,13 @@ class Header extends Component {
   render() {
     return  <header id="header" className={`fixed-top d-flex align-items-center ${this.props.location.pathname==="/" ? 'header-transparent' : ''}`}  >
   <div className="container d-flex align-items-center">
-    {/* <h1 className="logo me-auto"><a href="index.html">Rapid</a></h1> */}
+    
     {/* Uncomment below if you prefer to use an image logo */}
-    <Link to="/" className="logo me-auto">
-      <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo"/>
-      <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo-small"/>
-    </Link>
+    
+    <h1 className="logo me-auto"><Link to="/" className="logo me-auto"> First HSE </Link></h1>
+      {/* <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo"/>
+      <img src="assets/img/word-logo.png" alt="" className="img-fluid bg-logo-small"/> */}
+   
     
     <Navbar />
     <div className="social-links">
