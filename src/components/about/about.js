@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { withTranslation } from 'react-i18next';
+import './about.css';
 
 class About extends Component {
   render() {
-    return <section id="about" className="about">
+    return <section id="about" className="about bg">
   <div className="container" data-aos="fade-up">
     <div className="row">
       <div className="col-lg-5 col-md-6">

@@ -65,9 +65,6 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route  path='/terms' component={Terms} />
           <Route  path='/privacy' component={Privacy} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <ProtectedRoute path="/dashboard" component={Dashboard} />
       </Switch>
       <Footer />
     <Backtop />
